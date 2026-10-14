@@ -4,6 +4,7 @@ from generate_qr import generate_qr
 
 app = Flask(__name__)
 
+# Home page
 
 @app.route("/", methods=["GET", "POST"])
 def home():
