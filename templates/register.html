@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register — Smart Bicycle Parking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page">
+        <header class="brand">
+            <div class="brand-kicker">Campus Access</div>
+            <h1>Smart Bicycle Parking</h1>
+            <p>Register to receive your personal parking pass.</p>
+        </header>
+
+        <main class="card">
+            <div class="card-rule"></div>
+            <h2>Register</h2>
+            <p class="lede">Enter your details to create a secure QR credential.</p>
+
+            <form method="POST">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="actions">
+                    <button class="btn" type="submit">Register</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
